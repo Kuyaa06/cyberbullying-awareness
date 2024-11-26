@@ -14,8 +14,9 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="logo.png" alt="Logo" class="logo">
-            <h1>Stop Cyberbullying</h1>
+            <img src="logo.png" alt="Campaign Logo" class="logo" aria-label="Campaign Logo">
+            <h1>Stop Cyberbullying Campaign</h1>
+            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -30,12 +31,15 @@
     <main>
         <!-- About Section -->
         <section id="about" class="about-section" data-aos="fade-up">
-            <div class="about-text">
-                <h2>About Cyberbullying</h2>
-                <p>Cyberbullying is the use of electronic communication to bully or harass individuals. It can cause lasting harm, affecting mental health and self-esteem.</p>
-                <p>Our mission is to raise awareness, educate, and empower individuals to take a stand against online harassment.</p>
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>What Is Cyberbullying?</h2>
+                    <p>
+                      Cyberbullying refers to the use of digital platforms to harass, intimidate, or harm others. Unlike traditional bullying, cyberbullying takes place online, allowing the perpetrator to target individuals anonymously or publicly. It occurs across various platforms, including social media, messaging apps, gaming communities, and email..</p>
+                    <p>We aim to raise awareness, educate, and empower individuals to stand against online harassment.</p>
+                </div>
+                <img src="under maintenence.jpeg" alt="Awareness Campaign" class="profile-image">
             </div>
-            <img src="under maintenence.jpeg" alt="Awareness Campaign" class="profile-image">
         </section>
 
         <!-- Impact Section -->
@@ -79,7 +83,7 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section" data-aos="fade-up">
             <h2>Contact Us</h2>
-            <form id="contact-form">
+            <form id="contact-form" aria-label="Contact Form">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -107,14 +111,22 @@
 </body>
 
 </html>
-<header>
-  <button id="menu-toggle">☰</button> <!-- Hamburger Icon -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#tips">Get Help</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<!-- About Section -->
+<section id="about" class="about-section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+  ...
+</section>
+
+<!-- Impact Section -->
+<section id="impact" class="impact-section" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+  ...
+</section>
+
+<!-- Tips Section -->
+<section id="tips" class="tips-section" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+  ...
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+  ...
+</section>
