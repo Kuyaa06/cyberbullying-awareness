@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about cyberbullying, its impact, and how to prevent it. Join the fight against online harassment and create a safer digital space.">
     <title>Stop Cyberbullying Campaign</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <div class="header-container">
-            <img src="logo.png" alt="Campaign Logo" class="logo" aria-label="Campaign Logo">
-            <h1>Stop Cyberbullying Campaign</h1>
-            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+            <img src="logo.png" alt="Stop Cyberbullying Logo" class="logo">
+            <h1>Stop Cyberbullying</h1>
+            <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
             <nav>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#impact">Impact</a></li>
-                    <li><a href="#tips">Get Help</a></li>
+                    <li><a href="#tips">Prevention</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -31,51 +33,75 @@
     <main>
         <!-- About Section -->
         <section id="about" class="about-section" data-aos="fade-up">
-            <div class="content-container">
-                <div class="text-content">
-                    <h2>What Is Cyberbullying?</h2>
-                    <p>
-                      Cyberbullying refers to the use of digital platforms to harass, intimidate, or harm others. Unlike traditional bullying, cyberbullying takes place online, allowing the perpetrator to target individuals anonymously or publicly. It occurs across various platforms, including social media, messaging apps, gaming communities, and email..</p>
-                    <p>We aim to raise awareness, educate, and empower individuals to stand against online harassment.</p>
-                </div>
-                <img src="floppa.jpeg" alt="Awareness Campaign" class="profile-image">
+            <div class="about-text">
+                <h2>What is Cyberbullying?</h2>
+                <p>
+                    Cyberbullying is the use of digital platforms such as social media, messaging apps, gaming forums, or email to intimidate, harass, or humiliate others. It often involves spreading rumors, sending threatening messages, or sharing harmful content aimed at causing emotional distress.
+                </p>
+                <p>
+                    Unlike traditional bullying, cyberbullying invades personal spaces, making it hard for victims to escape, as it follows them into their homes and private lives through their devices.
+                </p>
             </div>
+            <img src="kucing.jpeg" alt="Cyberbullying Awareness" class="profile-image" data-aos="zoom-in">
         </section>
 
         <!-- Impact Section -->
         <section id="impact" class="impact-section" data-aos="fade-up">
-            <h2>The Impact of Cyberbullying</h2>
-            <div class="stats-container">
-                <div class="stat-card">
-                    <h3>59%</h3>
-                    <p>of teens have experienced some form of online harassment.</p>
+            <h2>The Consequences of Cyberbullying</h2>
+            <p>
+                Cyberbullying can have severe and long-lasting effects on victims, including:
+            </p>
+            <ul>
+                <li>Low self-esteem and feelings of isolation</li>
+                <li>Anxiety, depression, and suicidal thoughts</li>
+                <li>Decreased academic or professional performance</li>
+                <li>Strained relationships with family and friends</li>
+            </ul>
+            <p>
+                The psychological toll of cyberbullying makes it crucial to address and prevent such behavior.
+            </p>
+        </section>
+
+        <!-- Prevention Tips Section -->
+        <section id="tips" class="tips-section" data-aos="fade-up">
+            <h2>How to Prevent Cyberbullying</h2>
+            <div class="tips-container">
+                <div class="tip-card" data-aos="fade-right">
+                    <h3>Think Before You Post</h3>
+                    <p>
+                        Consider the impact of your words and actions before sharing them online.
+                    </p>
                 </div>
-                <div class="stat-card">
-                    <h3>37%</h3>
-                    <p>of children report long-term mental health effects from cyberbullying.</p>
+                <div class="tip-card" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Educate Yourself</h3>
+                    <p>
+                        Learn about the signs and consequences of cyberbullying to recognize and address it effectively.
+                    </p>
                 </div>
-                <div class="stat-card">
-                    <h3>80%</h3>
-                    <p>of bystanders choose not to intervene.</p>
+                <div class="tip-card" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Promote Positivity</h3>
+                    <p>
+                        Use social platforms to encourage kindness, respect, and inclusion.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Tips Section -->
-        <section id="tips" class="tips-section" data-aos="fade-up">
-            <h2>How You Can Help</h2>
-            <div class="tips-container">
-                <div class="tip-card">
-                    <h3>Be a Supportive Friend</h3>
-                    <p>Listen and encourage those affected by cyberbullying to seek help.</p>
+        <!-- Statistics Section -->
+        <section id="statistics" class="statistics-section" data-aos="fade-up">
+            <h2>Cyberbullying Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-card" data-aos="flip-left">
+                    <h3>42%</h3>
+                    <p>of young people report being victims of cyberbullying.</p>
                 </div>
-                <div class="tip-card">
-                    <h3>Report Abuse</h3>
-                    <p>Use reporting features on platforms to flag inappropriate content.</p>
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="100">
+                    <h3>80%</h3>
+                    <p>of children who are bullied online do not report it to adults.</p>
                 </div>
-                <div class="tip-card">
-                    <h3>Spread Awareness</h3>
-                    <p>Share information and encourage open conversations about online safety.</p>
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="200">
+                    <h3>50%</h3>
+                    <p>of victims have experienced mental health issues due to cyberbullying.</p>
                 </div>
             </div>
         </section>
@@ -83,7 +109,7 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section" data-aos="fade-up">
             <h2>Contact Us</h2>
-            <form id="contact-form" aria-label="Contact Form">
+            <form id="contact-form">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -94,39 +120,23 @@
                 </div>
                 <div>
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="How can we help?" rows="4" required></textarea>
+                    <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
                 </div>
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Stop Cyberbullying Initiative. All Rights Reserved.</p>
     </footer>
 
+    <!-- AOS Animation Initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
 
 </html>
-<!-- About Section -->
-<section id="about" class="about-section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-  ...
-</section>
-
-<!-- Impact Section -->
-<section id="impact" class="impact-section" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-  ...
-</section>
-
-<!-- Tips Section -->
-<section id="tips" class="tips-section" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-  ...
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-  ...
-</section>
