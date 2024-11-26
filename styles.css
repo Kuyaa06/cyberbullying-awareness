@@ -21,6 +21,7 @@ header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 header .logo {
@@ -46,6 +47,41 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #bbdefb;
+}
+
+/* Mobile Navigation Toggle */
+#menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none; /* Hide menu links by default */
+    flex-direction: column;
+    background-color: #1976d2;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
 }
 
 /* Section Styles */
@@ -85,8 +121,9 @@ h2 {
 }
 
 .stats-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   text-align: center;
 }
@@ -96,6 +133,7 @@ h2 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Default for larger screens */
 }
 
 .stat-card h3 {
@@ -105,7 +143,8 @@ h2 {
 
 .tips-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -117,10 +156,13 @@ h2 {
   width: 30%;
 }
 
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 form div {
@@ -156,167 +198,64 @@ footer {
   color: white;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Tablets */
 @media (max-width: 768px) {
   header .header-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   nav ul {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-section {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 20px; /* Add spacing between stacked cards */
   }
 
   .tips-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .tip-card {
-      width: 100%;
+  .tip-card,
+  .stat-card {
+    width: 100%; /* Full-width for smaller screens */
   }
 }
-/* General mobile adjustments */
-body {
-  font-size: 16px; /* Larger base font for readability */
-  margin: 0;
-  padding: 0;
-}
 
-.header-container {
-  flex-direction: column;
-  text-align: center;
-}
-
-nav ul {
-  flex-direction: column; /* Stack navigation links */
-  padding: 0;
-}
-
-nav ul li {
-  margin: 10px 0;
-}
-
-.about-section {
-  flex-direction: column;
-  text-align: center;
-}
-
-.about-section img {
-  width: 90%;
-  margin: 20px auto;
-}
-
-.stats-container {
-  flex-direction: column;
-  gap: 20px; /* Add spacing between stacked cards */
-}
-
-.tips-container {
-  flex-direction: column;
-}
-
-.tip-card {
-  margin-bottom: 20px;
-}
-
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Add spacing between form inputs */
-}
-
-footer p {
-  text-align: center;
-}
-
-/* Adjust buttons */
-button {
-  width: 100%;
-  font-size: 18px; /* Larger button text for touch screens */
-}
-
-/* Adjust statistics cards for mobile */
-.stat-card {
-  width: 90%;
-  margin: 10px auto;
-}
-/* Further reduce padding/margins */
-.header-container {
-  padding: 10px;
-}
-
-nav ul li a {
-  font-size: 18px;
-}
-
-h1, h2 {
-  font-size: 1.5rem; /* Adjust header font size for small screens */
-}
-
-.tips-container .tip-card, .stats-container .stat-card {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-#contact-form input, #contact-form textarea {
-  font-size: 1rem;
-  padding: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.stats-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-button, a {
-  padding: 15px;
-  font-size: 18px;
-}
-#menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  #menu-toggle {
-      display: block;
+/* Responsive Styles for Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
   }
 
-  nav ul {
-      display: none; /* Hide menu links */
-      flex-direction: column;
-      background-color: #1976d2;
-      position: absolute;
-      top: 50px;
-      right: 0;
-      width: 100%;
-      text-align: center;
+  h2 {
+    font-size: 24px;
   }
 
-  nav ul.active {
-      display: flex;
+  .about-section img {
+    width: 90%;
+    margin: 20px auto;
   }
 
-  nav ul li {
-      margin: 10px 0;
+  form input,
+  form textarea {
+    font-size: 1rem;
+    padding: 10px;
   }
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+
+  button {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }
