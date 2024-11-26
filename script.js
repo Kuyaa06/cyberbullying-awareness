@@ -11,4 +11,9 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
-    
+    const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
