@@ -180,3 +180,143 @@ footer {
       width: 100%;
   }
 }
+/* General mobile adjustments */
+body {
+  font-size: 16px; /* Larger base font for readability */
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+nav ul {
+  flex-direction: column; /* Stack navigation links */
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+.about-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-section img {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.stats-container {
+  flex-direction: column;
+  gap: 20px; /* Add spacing between stacked cards */
+}
+
+.tips-container {
+  flex-direction: column;
+}
+
+.tip-card {
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Add spacing between form inputs */
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Adjust buttons */
+button {
+  width: 100%;
+  font-size: 18px; /* Larger button text for touch screens */
+}
+
+/* Adjust statistics cards for mobile */
+.stat-card {
+  width: 90%;
+  margin: 10px auto;
+}
+/* Further reduce padding/margins */
+.header-container {
+  padding: 10px;
+}
+
+nav ul li a {
+  font-size: 18px;
+}
+
+h1, h2 {
+  font-size: 1.5rem; /* Adjust header font size for small screens */
+}
+
+.tips-container .tip-card, .stats-container .stat-card {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#contact-form input, #contact-form textarea {
+  font-size: 1rem;
+  padding: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+button, a {
+  padding: 15px;
+  font-size: 18px;
+}
+#menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+      display: block;
+  }
+
+  nav ul {
+      display: none; /* Hide menu links */
+      flex-direction: column;
+      background-color: #1976d2;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul.active {
+      display: flex;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
