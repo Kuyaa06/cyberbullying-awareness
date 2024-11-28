@@ -1,5 +1,5 @@
-// Initialize AOS Animation
 document.addEventListener('DOMContentLoaded', () => {
+  // AOS Animation Initialization
   AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
